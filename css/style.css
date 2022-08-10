@@ -531,4 +531,14 @@ html.is-animating .transition-swipe {
         flex-direction: column;
         height: auto;
     }
+    .hero .hero-heading {
+        width: 100%;
+        height: auto;
+        margin-bottom: 1rem;
+    }
+    .hero .hero-3d {
+        width: 100%;
+        height: auto;
+        margin-bottom: 1rem;
+    }
 }
