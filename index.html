@@ -8,8 +8,8 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<script type="text/javascript" src="https://livejs.com/live.js"></script>
-	<script src="https://kit.fontawesome.com/f3c7bd6f07.js" crossorigin="anonymous"></script>
+	<script defer type="text/javascript" src="https://livejs.com/live.js"></script>
+	<script defer src="https://kit.fontawesome.com/f3c7bd6f07.js" crossorigin="anonymous"></script>
 	<meta name="description" content="Fornt-End Devloper Portfolio, Ahmed Suliman is front-end devloper">
 	<link
 		href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;700;800;900&family=Montserrat:wght@300;700;800;900&display=swap"
@@ -18,10 +18,12 @@
 	<link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Faster+One&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&display=swap" rel="stylesheet">
+	<script defer src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
+	<script defer src="/JS/script.js"></script>
 </head>
 
 <body>
-	<header>
+	<nav>
 		<!-- <input type="checkbox" id="active">
 		<label for="active" class="menu-btn"><i class="fas fa-bars"></i></label> -->
 		<div class="wrapper">
@@ -32,8 +34,8 @@
 				<li><a href="/pages/contact.html">Conatct Me</a></li>
 			</ul>
 		</div>
-	</header>
-	<div class="hero">
+	</nav>
+	<div class="hero transition-fade" id="swup">
 		<div class="hero-heading">
 			<div class="hero-title animate__animated animate__slideInUp">
 				<p>Hi</p>
@@ -41,7 +43,7 @@
 				<p>I am Ahmed</p>
 			</div>
 			<div class="hero-subheading animate__animated animate__jackInTheBox">
-				<p>A Front-End Developer</p>
+				<p>I am a Front-End Developer</p>
 				<p>Your distinction in your market starts with me</p>
 			</div>
 			<div class="hero-btn">
