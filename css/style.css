@@ -477,7 +477,7 @@ html.is-animating .transition-swipe {
     }
     /* End */
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 440px) {
 	body{
 		background-color: black ;
 	}
