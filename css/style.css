@@ -583,7 +583,28 @@ nav .wrapper .nav-btn label .fa-x{
         width: 100%;
         height: 100vh;
         margin-top: 1rem;
-    }
+    } 
+	/* About */
+	.about{
+		flex-direction: column;
+	}
+	.about .about-heading {
+		width: 100%;
+	}
+	.about .about-heading h1{
+		font-size: var(--fs-subheadline);
+	}
+	.about .about-heading button{
+		width: 50%;
+		box-shadow: 30px 40px 4px rgba(0, 0, 0, 0.2);
+	}
+	.about .about-img{
+		width: 400px;
+		height: 400px;
+	}
+	.about .about-img img{
+		width: 70%;
+	}
 	/* Contact */
 	footer .heading h1{
 		font-size: var(--fs-subheadline);
