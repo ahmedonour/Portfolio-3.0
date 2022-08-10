@@ -477,7 +477,10 @@ html.is-animating .transition-swipe {
     }
     /* End */
 }
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 320px) {
+	body{
+		background-color: black ;
+	}
     nav .wrapper ul {
         width: 100vw;
         height: 100vh;
@@ -527,6 +530,7 @@ html.is-animating .transition-swipe {
     .hero {
         flex-direction: column-reverse;
         height: auto;
+		padding-left: 0;
     }
     /* .hero {
         flex-direction: column;
@@ -543,9 +547,16 @@ html.is-animating .transition-swipe {
         color: var(--clr-white);
         margin-bottom: 1rem;
     }
-    .hero .hero-heading .hero-btn button {
-        width: calc(-1vw + 100%);
+	.hero .hero-heading .hero-btn{
+		width: 100%;
+		height: auto;
+		flex-direction: column;
+		padding: 2rem;
+	}
+    .hero .hero-heading .hero-btn a button {
+        width: 50vw;
         height: 10vh;
+		margin-top: 1rem;
     }
     .hero .hero-3d {
         width: 100%;
@@ -553,3 +564,4 @@ html.is-animating .transition-swipe {
         margin-top: 1rem;
     }
 }
+
