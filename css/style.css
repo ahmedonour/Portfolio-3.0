@@ -35,7 +35,7 @@ a {
     color: transparent;
 }
 /* NavBar Style */
-nav {
+/* nav {
     width: 100vw;
     height: 80px;
     background-color: var(--clr-primary);
@@ -45,21 +45,28 @@ nav {
     flex-direction: row-reverse;
     justify-content: space-around;
     align-items: center;
-    /* position: sticky;
+    position: sticky;
     top: 1%;
-	left: 15%;
-	border-radius: 50px;*/
-}
+    left: 15%;
+    border-radius: 50px;
+} */
 #active {
     display: none;
 }
-
+nav label .fa-bars {
+    display: none;
+}
 nav .wrapper ul {
+	position: fixed;
+	background-color: transparent;
+	z-index: 3;
     list-style: none;
     display: flex;
-
-    justify-content: space-around;
-    width: 100%;
+	height: 100px;
+    justify-content: right;
+	padding-right: 3rem;
+	align-items: center;
+    width: 100vw;
 }
 nav .wrapper ul li a {
     width: 25%;
@@ -68,21 +75,23 @@ nav .wrapper ul li a {
     font-size: var(--fs-navBtn);
     font-weight: var(--fw-bold);
     color: var(--clr-white);
-    margin-left: 1rem;
+    margin-left: 1.5rem;
 }
 nav .wrapper ul li a:hover {
-    color: var(--clr-secondary);
     animation: text-animation 1s linear none;
+	text-decoration: underline;
+
 }
 nav .wrapper ul li a:focus {
     color: var(--clr-secondary);
+	text-decoration: underline;
+
 }
 @keyframes text-animation {
     0% {
         color: var(--clr-white);
     }
     100% {
-        color: var(--clr-secondary);
     }
 }
 /* NavBar End */
@@ -350,7 +359,7 @@ nav .wrapper ul li a:focus {
 /* Contact Me */
 footer {
     width: 100vw;
-    height: 30vh;
+    height: 100vh;
     padding: 2rem;
     background-color: var(--clr-secondary);
 }
@@ -365,11 +374,58 @@ footer .content {
     font-family: var(--ff-Montserrat);
     font-size: var(--fs-paragraph);
     font-weight: var(--fw-regular);
+	width: 100%;
+	height: 80vh;
+	display: grid;
+	place-items: center;
 }
-footer .content p a {
-    color: var(--clr-white);
+footer .content form{
+	width: 50%;
+	height: 90%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
-
+footer .content form input{
+	width: 60%;
+	height: 10%;
+	padding-left: 2rem;
+	font-family: var(--ff-Montserrat-Alternates);
+	outline: none;
+	border: none;
+	margin: 1rem;
+	border-radius: 50px;
+	font-size: var(--fs-paragraph);
+}
+footer .content form textarea{
+	width: 60%;
+	padding-inline: 1rem;
+	padding-top: 1rem;
+	font-family: var(--ff-Montserrat-Alternates);
+	outline: none;
+	border: none;
+	border-radius: 20px;
+	margin-bottom: 1rem;
+	font-size: var(--fs-paragraph);
+}
+footer .content form button{
+	width: 60%;
+	height: 10%;
+	outline: none;
+	border: none;
+	border-radius: 50px;
+	font-size: var(--fs-paragraph);
+	font-family: var(--ff-Montserrat-Alternates);
+	font-weight: var(--fw-bold);
+	color: var(--clr-secondary);
+	background-color: var(--clr-white);
+	transition: all 550ms ease-in-out;
+}
+footer .content form button:hover{
+	background-color: var(--clr-primary);
+	cursor: pointer;
+}
 /* Page Transtion */
 .transition-fade {
     opacity: 1;
@@ -423,8 +479,53 @@ html.is-animating .transition-swipe {
     }
     /* End */
 }
-
 @media screen and (max-width: 414px) {
+    nav .wrapper ul {
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: -1000px;
+        left: 0;
+        background-color: var(--clr-secondary);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 5;
+    }
+    nav .wrapper ul li a {
+        width: 100%;
+        font-family: var(--ff-Montserrat);
+        text-decoration: none;
+        font-size: var(--fs-subheadline);
+        font-weight: var(--fw-bold);
+        color: var(--clr-white);
+        margin-top: 1rem;
+    }
+    nav .wrapper ul li a:hover {
+        color: var(--clr-primary);
+        animation: text-animation 1s linear none;
+    }
+    nav .wrapper ul li a:focus {
+        color: var(--clr-primary);
+    }
+    .fa-bars {
+        display: flex;
+        position: absolute;
+        right: 10px;
+        top: 50px;
+    }
+    @keyframes text-animation {
+        0% {
+            color: var(--clr-white);
+        }
+        100% {
+            color: var(--clr-primary);
+        }
+    }
+    #active:checked ~ nav .wrapper ul {
+        top: 0;
+    }
     .hero {
         flex-direction: column-reverse;
     }

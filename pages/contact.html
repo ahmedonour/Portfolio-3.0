@@ -26,14 +26,14 @@
 
 <body>
     <nav>
-        <!-- <input type="checkbox" id="active">
-    		<label for="active" class="menu-btn"><i class="fas fa-bars"></i></label> -->
+        <input type="checkbox" id="active">
+        <label for="active" class="menu-btn"><i class="fas fa-bars"></i></label>
         <div class="wrapper">
             <ul>
                 <li><a href="/index.html">Home</a></li>
-                <li><a href="/about.html">About</a></li>
-                <li><a href="/work.html">My Work</a></li>
-                <li><a href="/contact.html">Conatct Me</a></li>
+				<li><a href="/pages/about.html">About</a></li>
+				<li><a href="/pages/work.html">My Work</a></li>
+				<li><a href="/pages/contact.html">Conatct Me</a></li>
             </ul>
         </div>
     </nav>
@@ -43,13 +43,13 @@
             <h1>Contact Me</h1>
         </div>
         <div class="content">
-            <p>Email :
-                <a href="mailto:ahmedonour.49@gmail.com">ahmedonour.49@gmail.com</a>
-            </p>
-            <p>Phone :
-                <a href="tel:+249925138799">+249-92-513-8799</a>
-            </p>
-
+			<form action="https://formsubmit.co/ahmedonour.49@gmail.com" method="POST">
+				<input type="text" name="Fullname" placeholder="Full Name" required>
+				<input type="email" name="Email" placeholder="Email" required>
+				<input type="tel" name="Phone" placeholder="+249 93-514-8688">
+				<textarea name="Message" cols="50" rows="5" placeholder="Your Message" required></textarea>
+				<button type="submit">Send</button>
+			</form>
         </div>
     </footer>
 </body>
