@@ -533,11 +533,11 @@ html.is-animating .transition-swipe {
     }
     .hero .hero-heading {
         width: 100%;
-        height: auto;
+        height: 100vh;
         margin-bottom: 1rem;
     }
     .hero .hero-heading .hero-title {
-        font-size: var(--fs-subheadline);
+        font-size: var(--fs-paragraph);
         font-weight: var(--fw-bold);
         color: var(--clr-white);
         margin-bottom: 1rem;
