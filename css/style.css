@@ -527,10 +527,10 @@ html.is-animating .transition-swipe {
     .hero {
         flex-direction: column-reverse;
     }
-    .hero {
+    /* .hero {
         flex-direction: column;
         height: auto;
-    }
+    } */
     .hero .hero-heading {
         width: 100%;
         height: 80vh;
