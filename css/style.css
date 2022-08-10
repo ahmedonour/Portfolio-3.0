@@ -529,5 +529,6 @@ html.is-animating .transition-swipe {
     }
     .hero {
         flex-direction: column;
+        height: auto;
     }
 }
