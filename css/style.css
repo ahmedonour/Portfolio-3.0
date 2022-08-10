@@ -536,9 +536,15 @@ html.is-animating .transition-swipe {
         height: auto;
         margin-bottom: 1rem;
     }
+    .hero .hero-heading .hero-title {
+        font-size: var(--fs-subheadline);
+        font-weight: var(--fw-bold);
+        color: var(--clr-white);
+        margin-bottom: 1rem;
+    }
     .hero .hero-3d {
         width: 100%;
-        height: auto;
-        margin-bottom: 1rem;
+        height: 100vh;
+        margin-top: 1rem;
     }
 }
