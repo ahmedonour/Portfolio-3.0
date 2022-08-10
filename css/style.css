@@ -57,15 +57,15 @@ nav label .fa-bars {
     display: none;
 }
 nav .wrapper ul {
-	position: fixed;
-	background-color: transparent;
-	z-index: 3;
+    position: fixed;
+    background-color: transparent;
+    z-index: 3;
     list-style: none;
     display: flex;
-	height: 100px;
+    height: 100px;
     justify-content: right;
-	padding-right: 3rem;
-	align-items: center;
+    padding-right: 3rem;
+    align-items: center;
     width: 100vw;
 }
 nav .wrapper ul li a {
@@ -79,13 +79,11 @@ nav .wrapper ul li a {
 }
 nav .wrapper ul li a:hover {
     animation: text-animation 1s linear none;
-	text-decoration: underline;
-
+    text-decoration: underline;
 }
 nav .wrapper ul li a:focus {
     color: var(--clr-secondary);
-	text-decoration: underline;
-
+    text-decoration: underline;
 }
 @keyframes text-animation {
     0% {
@@ -374,57 +372,57 @@ footer .content {
     font-family: var(--ff-Montserrat);
     font-size: var(--fs-paragraph);
     font-weight: var(--fw-regular);
-	width: 100%;
-	height: 80vh;
-	display: grid;
-	place-items: center;
+    width: 100%;
+    height: 80vh;
+    display: grid;
+    place-items: center;
 }
-footer .content form{
-	width: 50%;
-	height: 90%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+footer .content form {
+    width: 50%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-footer .content form input{
-	width: 60%;
-	height: 10%;
-	padding-left: 2rem;
-	font-family: var(--ff-Montserrat-Alternates);
-	outline: none;
-	border: none;
-	margin: 1rem;
-	border-radius: 50px;
-	font-size: var(--fs-paragraph);
+footer .content form input {
+    width: 60%;
+    height: 10%;
+    padding-left: 2rem;
+    font-family: var(--ff-Montserrat-Alternates);
+    outline: none;
+    border: none;
+    margin: 1rem;
+    border-radius: 50px;
+    font-size: var(--fs-paragraph);
 }
-footer .content form textarea{
-	width: 60%;
-	padding-inline: 1rem;
-	padding-top: 1rem;
-	font-family: var(--ff-Montserrat-Alternates);
-	outline: none;
-	border: none;
-	border-radius: 20px;
-	margin-bottom: 1rem;
-	font-size: var(--fs-paragraph);
+footer .content form textarea {
+    width: 60%;
+    padding-inline: 1rem;
+    padding-top: 1rem;
+    font-family: var(--ff-Montserrat-Alternates);
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    margin-bottom: 1rem;
+    font-size: var(--fs-paragraph);
 }
-footer .content form button{
-	width: 60%;
-	height: 10%;
-	outline: none;
-	border: none;
-	border-radius: 50px;
-	font-size: var(--fs-paragraph);
-	font-family: var(--ff-Montserrat-Alternates);
-	font-weight: var(--fw-bold);
-	color: var(--clr-secondary);
-	background-color: var(--clr-white);
-	transition: all 550ms ease-in-out;
+footer .content form button {
+    width: 60%;
+    height: 10%;
+    outline: none;
+    border: none;
+    border-radius: 50px;
+    font-size: var(--fs-paragraph);
+    font-family: var(--ff-Montserrat-Alternates);
+    font-weight: var(--fw-bold);
+    color: var(--clr-secondary);
+    background-color: var(--clr-white);
+    transition: all 550ms ease-in-out;
 }
-footer .content form button:hover{
-	background-color: var(--clr-primary);
-	cursor: pointer;
+footer .content form button:hover {
+    background-color: var(--clr-primary);
+    cursor: pointer;
 }
 /* Page Transtion */
 .transition-fade {
@@ -528,5 +526,8 @@ html.is-animating .transition-swipe {
     }
     .hero {
         flex-direction: column-reverse;
+    }
+    .hero {
+        flex-direction: column;
     }
 }
