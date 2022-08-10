@@ -544,7 +544,7 @@ html.is-animating .transition-swipe {
         margin-bottom: 1rem;
     }
     .hero .hero-heading .hero-btn button {
-        width: 90%;
+        width: calc(-1vw + 100%);
         height: 10vh;
     }
     .hero .hero-3d {
