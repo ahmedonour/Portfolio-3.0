@@ -600,7 +600,7 @@ html.is-animating .transition-swipe {
         width: 100%;
     }
     .about .about-heading {
-        width: 100%;
+        width: 50%;
     }
     .about .about-heading h1 {
         font-size: var(--fs-subheadline);
