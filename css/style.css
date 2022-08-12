@@ -555,8 +555,10 @@ html.is-animating .transition-swipe {
     }
     .hero {
         flex-direction: column-reverse;
-        height: auto;
+        height: 100vh;
         padding-left: 0;
+		justify-content: center;
+		align-items: center;
     }
     /* .hero {
         flex-direction: column;
@@ -651,11 +653,11 @@ html.is-animating .transition-swipe {
         width: 100vw;
         height: 100px;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         padding: 1rem;
         background-color: var(--clr-white);
-        position: absolute;
+        position: fixed;
         bottom: 0;
         left: 0;
         right: 0;
@@ -665,6 +667,14 @@ html.is-animating .transition-swipe {
         justify-content: space-between;
         align-items: center;
         list-style: none;
-        color: var(--clr-secondary);
+		width: 80%;
+		height: auto;
     }
+	.bottom-nav ul li a{
+		width: 50px;
+		height: 50px;
+		font-size: var(--fs-paragraph);
+        color: var(--clr-secondary);
+
+	}
 }
