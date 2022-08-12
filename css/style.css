@@ -604,6 +604,9 @@ html.is-animating .transition-swipe {
     .about .about-heading h1 {
         font-size: var(--fs-subheadline);
     }
+    .about .about-heading p {
+        font-size: var(--fs-paragraph);
+    }
     .about .about-heading button {
         width: 50%;
         box-shadow: 30px 40px 4px rgba(0, 0, 0, 0.2);
