@@ -492,7 +492,7 @@ html.is-animating .transition-swipe {
     }
     .wrapper {
         position: fixed;
-        top: -1000px;
+        top: -10000px;
         left: 0;
         z-index: 5;
         transition: all 550ms ease-in-out;
@@ -542,6 +542,9 @@ html.is-animating .transition-swipe {
     #active:checked ~ .wrapper {
         top: 0;
     }
+	nav .wrapper ul li a:active ~ .wrapper{
+		top: -100000px;
+	}
     .hero {
         flex-direction: column-reverse;
         height: auto;
