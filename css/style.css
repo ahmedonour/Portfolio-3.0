@@ -599,7 +599,7 @@ html.is-animating .transition-swipe {
         flex-direction: column;
         justify-content: space-around;
         width: 80%;
-        overflow: scroll;
+        overflow: hidden;
     }
     .about .about-heading {
         width: 100%;
