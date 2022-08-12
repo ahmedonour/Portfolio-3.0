@@ -597,6 +597,7 @@ html.is-animating .transition-swipe {
     /* About */
     .about {
         flex-direction: column;
+        width: 100%;
     }
     .about .about-heading {
         width: 100%;
@@ -605,7 +606,8 @@ html.is-animating .transition-swipe {
         font-size: var(--fs-subheadline);
     }
     .about .about-heading p {
-        font-size: var(--fs-paragraph);
+        font-size: 1rem;
+        font-weight: var(--fw-extra-light);
     }
     .about .about-heading button {
         width: 50%;
