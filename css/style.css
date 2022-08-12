@@ -614,8 +614,8 @@ html.is-animating .transition-swipe {
         box-shadow: 30px 40px 4px rgba(0, 0, 0, 0.2);
     }
     .about .about-img {
-        width: 400px;
-        height: 400px;
+        width: 200px;
+        height: 200px;
     }
     .about .about-img img {
         width: 70%;
