@@ -667,7 +667,7 @@ html.is-animating .transition-swipe {
         align-items: center;
         padding: 1rem;
         background-color: var(--clr-white);
-        position: fixed;
+        position: sticky;
         bottom: 0;
         left: 0;
         right: 0;
