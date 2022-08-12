@@ -598,11 +598,11 @@ html.is-animating .transition-swipe {
     .about {
         flex-direction: column;
         justify-content: space-around;
-        width: 100%;
+        width: 80%;
     }
     .about .about-heading {
         width: 100%;
-        height: 40%;
+        height: 30%;
     }
     .about .about-heading h1 {
         font-size: var(--fs-subheadline);
@@ -617,8 +617,8 @@ html.is-animating .transition-swipe {
         box-shadow: 30px 40px 4px rgba(0, 0, 0, 0.2);
     }
     .about .about-img {
-        width: 200px;
-        height: 200px;
+        width: 300px;
+        height: 300px;
     }
     .about .about-img img {
         width: 70%;
