@@ -21,10 +21,25 @@
 	<script defer src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
 	<script defer src="/JS/script.js"></script>
 	<link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
-	<script src="https://kit.fontawesome.com/f3c7bd6f07.js" crossorigin="anonymous"></script>
+	<script defer src="https://kit.fontawesome.com/f3c7bd6f07.js" crossorigin="anonymous"></script>
+	<script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"
+		integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
 </head>
 
 <body>
+	<div class="loader">
+		<div class="loader-img">
+			<img src="/images/favicon.png" alt="">
+		</div>
+		<div class="loader-text">
+			<h1 class="hide"><span class="text">Please</span></h1>
+			<h1 class="hide"><span class="text">Wite ...</span></h1>
+			<h1 class="hide sign"><span class="text"> Ahmed Suliman Onour</span></h1>
+		</div>
+	</div>
 	<nav>
 		<input type="checkbox" id="active">
 		<label for="active" class="menu-btn"><i class="fas fa-bars"></i></label>
@@ -70,6 +85,13 @@
 			<li><a href="/pages/contact.html"><i class="far fa-paper-plane"></i></a></li>
 		</ul>
 	</div>
+
+	<script defer>
+		$(window).on('load', function () {
+			$('.loader').slideDown(1000);
+			$('.hero').slideDown(1000);
+		});
+	</script>
 </body>
 
 </html>

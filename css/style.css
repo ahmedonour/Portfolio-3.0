@@ -34,6 +34,45 @@ a {
     text-decoration: none;
     color: transparent;
 }
+/* Loader */
+.loader {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background-color: var(--clr-secondary);
+    position: fixed;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+}
+
+.loader img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+.loader .loader-text {
+    font-family: var(--ff-Montserrat-Alternates);
+    font-size: var(--fs-subheadline);
+    color: var(--clr-white);
+}
+.loader .loader-text .sign {
+    font-family: var(--ff-Montserrat);
+    font-size: var(--fs-navBtn);
+    font-weight: var(--fw-regular);
+    color: var(--clr-primary);
+}
+.hide {
+    background-color: var(--clr-secondary);
+    overflow: hidden;
+}
+.hide span {
+    display: inline-block;
+    transform: translateY(100%);
+}
+/* End Of Loader */
 /* NavBar Style */
 /* nav {
     width: 100vw;
@@ -93,7 +132,7 @@ nav .wrapper ul li a:focus {
         color: var(--clr-secondary);
     }
     100% {
-		color: var(--clr-white);
+        color: var(--clr-white);
     }
 }
 /* NavBar End */
@@ -366,7 +405,7 @@ footer {
     background-color: var(--clr-primary);
 }
 footer .heading h1 {
-	margin-top: 2rem;
+    margin-top: 2rem;
     font-family: var(--ff-Montserrat);
     font-size: var(--fs-headline);
     font-weight: var(--fw-black);
@@ -485,36 +524,36 @@ html.is-animating .transition-swipe {
         display: block;
     }
     /* End */
-	/* About */
-	.about{
-		flex-direction: column;
-	}
-	.about .about-heading{
-		width: 90vw;
-		height: 50%;
-	}
-	.about .about-heading p{
-		font-weight: var(--fw-extra-light);
-	}
-	.about .about-img{
-		width: 100%;
-		height: auto;
-	}
-	.about .about-img img{
-		width: 50%;
-	}
-	.my-work .my-work-card-container .my-work-card {
-		height: 35vh;
-	}
-	.my-work .my-work-card-container .my-work-card .my-work-card-btn button{
-		width: 5rem;
-		height: 2.5rem;
-		font-size: 1rem;
-	}
+    /* About */
+    .about {
+        flex-direction: column;
+    }
+    .about .about-heading {
+        width: 90vw;
+        height: 50%;
+    }
+    .about .about-heading p {
+        font-weight: var(--fw-extra-light);
+    }
+    .about .about-img {
+        width: 100%;
+        height: auto;
+    }
+    .about .about-img img {
+        width: 50%;
+    }
+    .my-work .my-work-card-container .my-work-card {
+        height: 35vh;
+    }
+    .my-work .my-work-card-container .my-work-card .my-work-card-btn button {
+        width: 5rem;
+        height: 2.5rem;
+        font-size: 1rem;
+    }
 
-	footer .content form{
-		width: 100%;
-	}
+    footer .content form {
+        width: 100%;
+    }
 }
 @media screen and (max-width: 440px) {
     nav {
