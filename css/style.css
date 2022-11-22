@@ -29,7 +29,7 @@ body::-webkit-scrollbar {
 }
 body {
 	font-family: var(--ff-Montserrat);
-	font-size: 5rem;
+	font-size: 10vw;
 	color: #5200ff;
     background-color: var(--clr-primary);
 	text-align: center;
