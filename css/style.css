@@ -28,6 +28,9 @@ body::-webkit-scrollbar {
     display: none;
 }
 body {
+	font-family: var(--ff-Montserrat);
+	font-size: 5rem;
+	color: #5200ff;
     background-color: var(--clr-primary);
 }
 a {
