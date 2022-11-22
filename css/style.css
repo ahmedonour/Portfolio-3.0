@@ -152,7 +152,7 @@ nav .wrapper ul li a:focus {
     width: 100vw;
     height: 90vh;
     background-color: var(--clr-primary);
-    display: flex;
+    display: none;
 }
 .hero .hero-heading {
     width: 50%;
